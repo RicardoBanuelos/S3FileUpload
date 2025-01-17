@@ -1,0 +1,12 @@
+spring:
+  config:
+    import: classpath:application-secrets.yml
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
